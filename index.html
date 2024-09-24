@@ -1,11 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> WDD 131</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Kingsley Ezepue</title>
+    <meta name="description" content="This page contains information about myself; Kingsley Ezepue, applying previous knowledge of html and css in addition to newly learnt javascript knowledge for this course being WDD131 - Dynamic Web Fundamentals">
+    <meta name="author" content="Kingsley Ezepue">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <h1>WDD 131 Course</h1>
+    <header>
+        <h1>WDD 131: Dynamic Web Fundamentals - Kingsley Ezepue</h1>
+        <nav>
+            <a href="https://www.linkedin.com/in/kingsleyezepue">LinkedIn</a>
+            <a href="https://byui.instructure.com">I-Learn</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/ot/eccl/10?lang=eng&id=p19#p19">Scripture</a>
+            <a href="">Final Project</a>
+        </nav>
+    </header>
+    <main>
+        <section class="card">
+            <h2>About Me</h2>
+            <img class="profile" src="images/profile.jpg" alt="Kingsley Ezepue" width="200">
+            <p>My name is Kingsley but my friends call me static. I am from Nigeria and live there with my family. I just graduated with a Bachelors degree in Mechanical Engineering. I am a calisthenics athlete and I also enjoy reading novels and playing video games. I hope to travel a lot and see a lot of new places, experience diverse culture and even learn new languages.</p>
+            <div>
+                <h1>Nigeria</h1>
+                <hr>
+                <img class="country" src="images/Nigerianflag.png" alt="Nigerian Flag">
+                <p>Nigeria, situated in West Africa, is a vibrant and diverse nation renowned for its rich cultural heritage, diverse landscapes, and significant economic potential. With a population exceeding 200 million, it stands as the most populous country on the African continent. Nigeria boasts a complex tapestry of ethnic groups, languages, and traditions, contributing to its dynamic cultural mosaic.</p>
+            </div>
+        </section>
+        <section id="resources" class="card">
+            <h2>Web Dev Resources</h2>
+            <div class="list">
+                <ul>
+                    <li><a href="https://www.w3schools.com/" target="_blank">W3 schools</a></li>
+                    <li><a href="https://codepen.io/" target="_blank">Codepen</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/" target="_blank">MDN Web Docs</a></li>
+                    </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p> &copy; <span id="currentyear"></span> Kingsley Ezepue ---- Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>

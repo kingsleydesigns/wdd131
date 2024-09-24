@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Montserrat&display=swap');
+
+body{
+    font-family: "Montserrat", sans-serif;
+}
+header {
+    background-color: steelblue;
+}
+header h1{
+    padding-top: 1rem;
+    text-align: center;
+    font-family: "Croissant One", serif;
+}
+nav{
+    background-color: black;
+    padding: 1em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+nav a {
+    color: white;
+    text-align:justify;
+    text-decoration: none;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+nav a:hover {
+    background-color: steelblue;
+    transform: scale(1.1);
+    color: black;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 90%;
+    margin: 0 auto;
+}
+hr {
+    border: none;
+    border-top: 2px solid grey; 
+    width: 70%;
+    margin: 1rem auto;
+}
+ul, li{
+    padding: 10px;
+    margin-left: 1rem;
+}
+p{
+    padding: 10px;
+    margin-left: 1rem;
+}
+li a:hover {
+    background-color: steelblue;
+    transform: scale(1.1);
+    color: black;
+}
+main h1 {
+    text-align: center;
+    padding: px;
+    margin-bottom: 0%;
+    font-family: "Croissant One", serif;
+}
+h2{
+    background-color: steelblue;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 0%;
+    font-family: "Croissant One", serif;
+}
+img {
+    height: auto;
+    padding: 2px;
+}
+section{
+    border:2px solid grey;
+    margin: 2em;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#resources{
+    position: relative;
+}
+.list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+div{
+    padding-top: 1rem;
+}
+div p{
+    margin-left: 12rem; 
+}
+.profile {
+    float: right;
+    width:120px;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+.country {
+    width: 150px;
+    float: left;
+    margin-top: 5rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+footer {
+    background-color: steelblue;
+}
+footer p{
+    text-align: center;
+    margin: 0%;
+    font-weight: bold;
+}
