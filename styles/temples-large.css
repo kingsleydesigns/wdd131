@@ -1,0 +1,41 @@
+@media screen and (min-width: 818px) {
+    header,  footer {
+        max-width: 100%;
+    }
+
+    header{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center
+    }
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1rem;
+        margin: 1rem auto;
+        max-width: 90%;
+    }
+
+    #menu {
+		display: none; 
+	}
+    
+    nav{
+        margin-left: auto;
+    }
+    
+    .navigation {
+		flex-direction: row;
+	}
+
+    .navigation a {
+		display: flex;
+	}
+
+    h2 {
+        grid-column: 1 / -1;
+    }
+
+
+}
+
