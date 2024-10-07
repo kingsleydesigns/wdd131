@@ -1,15 +1,16 @@
+:root {
+    --primary-color: steelblue;
+}
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
-header{
-    background-color: steelblue;
-}
-
 header, footer {
     max-width: 100%;
+    background-color: var(--primary-color);
 }
 
 body {
@@ -48,7 +49,6 @@ figure{
 
 nav {
 	margin: 1rem ;
-    background-color: steelblue;
 }
 
 #menu {
@@ -73,7 +73,7 @@ nav {
 	display: flex;
 	flex-direction: column;
 	list-style: none;
-	background-color: steelblue;
+	background-color: var(--primary-color);
 	color: #fff;
 }
 
@@ -98,10 +98,6 @@ nav {
 
 figcaption{
     text-align: center;
-}
-
-footer {
-    background-color: steelblue;
 }
 
 footer p{
