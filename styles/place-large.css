@@ -1,0 +1,60 @@
+@media screen and (min-width: 818px) {
+    
+    body {
+        max-width: 100%;
+    }
+
+    header,  footer {
+        max-width: 100%;
+    }
+
+    main{
+        max-width: 100%;
+    }
+
+    img{
+        display: block;
+        max-width: 100%;
+        border-bottom: none;
+    }
+
+    h2{
+        background-color: var(--secondary-color);
+        padding: 1rem;
+        color: white;
+    }
+
+    .weather-icon{
+        display: none;
+    }
+
+    #weather h2::after {
+        content: " 🌤️"; /* Add your weather emoji here */
+        margin-left: 0.5rem; /* Add space between the heading and the emoji */
+        font-size: 1.5rem; /* Adjust size to fit your design */
+        vertical-align: middle; /* Vertically align with the text */
+    }
+
+    .data, .weather {
+        position: absolute; /* Allows the divs to float over the image */
+        background-color: rgba(255, 255, 255, 0.8); /* White background with 80% opacity */
+        padding: 1rem;
+        border-radius: 10px;
+        max-width: 25vw; /* Adjust as needed */
+    }
+    
+    #data {
+        top: 40vh; /* Adjust the distance from the top */
+        left: 2vw; /* Adjust the distance from the left */
+    }
+
+    #weather {
+        top: 135vh ; /* Let the bottom define vertical positioning */
+        right: 2vw; /* Adjust distance from the right */
+
+    
+    }
+
+    
+    
+}

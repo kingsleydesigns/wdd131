@@ -1,0 +1,100 @@
+:root {
+    --primary-color: rgb(206, 20, 20);
+    --secondary-color: #008000;
+    /* These are also part of the dubai flag colors. I also used black for my heading elements to add to the flag color*/
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    max-width: 640px;
+}
+
+header, footer {
+    max-width: 640px;
+    background-color: var(--primary-color);
+    padding: 2rem;
+    font-size: 1.5rem;
+}
+
+.flagcolor{
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    width: 100%;
+}
+main{
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    max-width: 640px;
+    border-bottom: 5px solid var(--primary-color);
+}
+
+h1 {
+    font-family: "Croissant One", serif;
+    color: black;
+    margin: 0;
+    padding: 1.5rem;
+    text-align: center;
+    background-color: var(--primary-color); 
+}
+
+h2 {
+    font-family: "Croissant One", serif;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 1rem;
+    color: #333;
+}
+
+.weather-icon {
+    width: 64px;
+    height: auto;
+    margin-bottom: 1rem;
+    border-bottom: none;
+}
+.data {
+    background-color: #f8f8f8;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    text-align: center;
+}
+    
+dt::after {
+    content: ":";
+    margin-right: 2px;
+}
+
+dl {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem 0.5rem;
+    align-items: center;
+}
+
+dt {
+    font-weight: bold;
+    text-align: right;
+}
+
+dd {
+    margin-left: 0.5rem;
+    text-align: left;
+}
+
+
+footer p {
+    text-align: center;
+    margin: 0%;
+    font-weight: bold;
+}    
