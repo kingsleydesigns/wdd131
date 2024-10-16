@@ -41,7 +41,7 @@ img{
 
 h1 {
     font-family: "Croissant One", serif;
-    color: black;
+    color: white;
     margin: 0;
     padding: 1.5rem;
     text-align: center;
@@ -95,6 +95,7 @@ dd {
 
 footer p {
     text-align: center;
+    color: white;
     margin: 0%;
     font-weight: bold;
 }    
