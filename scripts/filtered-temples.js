@@ -151,14 +151,14 @@ function filterTemples(condition) {
 document.querySelector("#old").addEventListener("click", () => {
     filterTemples(temple => {
         const year = new Date(temple.dedicated).getFullYear();
-        return year < 2000;
+        return year < 1900;
     });
 });
 
 document.querySelector("#new").addEventListener("click", () => {
     filterTemples(temple => {
         const year = new Date(temple.dedicated).getFullYear();
-        return year >= 2000;
+        return year > 2000;
     });
 });
 
