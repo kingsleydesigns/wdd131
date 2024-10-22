@@ -1,0 +1,39 @@
+body{
+    padding: 2rem;
+    margin: 1rem auto;
+}
+table{
+    width: 500px;
+    margin: 1rem auto;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+caption {
+    caption-side: bottom;
+    font-size: small;
+    padding: 10px;
+}
+th,td {
+    padding: 0.5rem 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    white-space: pre;
+}
+thead th, tbody td {
+    text-align: center;
+}
+thead{
+    background-color: steelblue;
+}
+.blank {
+    background-color: steelblue;
+  }
+.header {
+    background-color: rgb(219, 213, 213);
+}
+th{
+    font-size: larger;
+  }
+
+tbody tr:nth-child(even) {
+    background-color: #eee;
+  }

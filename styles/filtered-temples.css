@@ -1,0 +1,154 @@
+:root {
+    --primary-color: steelblue;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header, footer {
+    max-width: 100%;
+    background-color: var(--primary-color);
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    max-width: 640px;
+}
+
+h1 {
+	text-align: left;
+	font-family: "Croissant One", serif;
+	font-size: 1.5rem;
+	margin-left: 1rem;
+    padding: 1.5rem;
+}
+
+h2 {
+    font-family: "Croissant One", serif;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 1rem;
+}
+
+img {
+    width: 100%;
+}
+
+figure{
+    margin: 1rem;
+}
+
+nav {
+	margin: 1rem ;
+}
+
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: black;
+	position: absolute;
+	top: 1.3rem;
+	right: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❎";
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	background-color: var(--primary-color);
+	color: #fff;
+}
+
+.navigation a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+    font-weight: 700;
+}
+
+.navigation a:hover { 
+	background-color: black;
+	color: white;
+	font-weight: 700;
+}
+
+.open a {
+	display: block;
+}
+
+figcaption{
+    text-align: center;
+}
+
+footer p{
+    padding: 1rem;
+    text-align: center;
+    margin: 0%;
+    font-weight: bold;
+}
+  
+.temple-card {
+background-color: #f8f9fa; /* Light background color */
+border: 1px solid #e0e0e0; /* Border for the card */
+border-radius: 10px; /* Rounded corners */
+box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+margin: 0.5rem;
+padding: 20px; /* Space inside the card */
+text-align: center; /* Center the text */
+transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.temple-card:hover {
+transform: scale(1.05); /* Scale up slightly on hover */
+}
+
+.temple-card h3 {
+font-size: 1.5rem; /* Larger font for the temple name */
+color: #333; /* Dark color for contrast */
+margin-bottom: 10px; /* Space below the temple name */
+}
+
+.temple-card p {
+font-size: 1rem; /* Normal font size for the properties */
+color: #666; /* Slightly muted color for the text */
+margin-bottom: 8px; /* Space below each property */
+}
+
+.temple-card img {
+width: 100%; /* Image takes full width of the card */
+height: auto; /* Maintain aspect ratio */
+border-radius: 8px; /* Slight rounding of image corners */
+margin-top: 15px; /* Space between the text and the image */
+object-fit: cover; /* Ensure the image fits nicely in the card */
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.9);
+}
+
+@media screen and (min-width: 480px) and (max-width: 817px) {
+    main {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+      margin: 0 auto;
+    }
+    h2 {
+        grid-column: 1 / -1;
+    }
+} 
