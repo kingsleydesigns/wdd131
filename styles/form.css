@@ -51,6 +51,7 @@ textarea{
     box-sizing: border-box;
     border: 1px solid grey;
     border-radius: 6px;
+    margin-top: 3px ;
     padding: .75rem;
     width: 100%;
     max-width: 400px;
