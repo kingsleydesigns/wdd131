@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="description" content="Building a Product review form and using local storage to keep track of user behavior or input">
+    <meta name="Author" content="Kingsley Ezepue">
+    <link rel="stylesheet" href="styles/form.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html" class="wf1" onsubmit="trackReviewCount()">
+            <label>Product name*
+                <select id="subject" name="subject" required><option value="">Choose a Product ... &#9662;</option>
+                    
+                </select>
+            </label>
+            <div>Overall Rating*</div>
+            <div class="rating-container">
+                <label><input type="radio" name="rating" id="rating" required> &#9734;</label>
+                <label><input type="radio" name="rating" id="rating" required> &#9734;&#9734;</label>
+                <label><input type="radio" name="rating" id="rating" required> &#9734;&#9734;&#9734;</label>
+                <label><input type="radio" name="rating" id="rating" required> &#9734;&#9734;&#9734;&#9734;</label>
+                <label><input type="radio" name="rating" id="rating" required> &#9734;&#9734;&#9734;&#9734;&#9734;</label>
+            </div>
+            <label>Date of Installation* <input id="date"type="date" name="completeDate" required></label>
+            <div>Which features did you find useful in the product?</div>
+            <div class="check">(Check all that apply)</div>
+            <label><input type="checkbox" id="durability" name="durability" value="yes"> Durability</label>
+            <label><input type="checkbox" id="easeofuse" name="easeofuse" value="yes"> Ease of Use</label>
+            <label><input type="checkbox" id="performance" name="performance" value="yes"> Performance</label>
+            <label><input type="checkbox" id="design" name="design" value="yes"> Design</label>
+
+            <label>Written Review (optional)<textarea id="review" name="review" rows="4" cols="50" placeholder="Write your review here..."></textarea></label>
+            <label>Your name (optional)<input type="text" id="name" name="fname"></label>
+
+            <input type="submit" value="Post Review">
+
+        </form>
+    </main>
+    <footer>
+        <p> &copy; <span id="currentyear"></span> Kingsley Ezepue ---- Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+    
+    <script src="scripts/form.js" defer></script>
+</body>
+</html>
