@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Static Beast - Blog</title>
+  <meta name="description" content="This is the blog page which i would update with tips based on my experience">
+  <meta name="Author" content="Kingsley Ezepue">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/main-large.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Static Beast</h1>
+    <p>Journey of a Static Athlete</p>
+    <button id="menu-toggle" aria-label="Toggle menu"></button>
+    <nav id="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="tracker.html">Progress Tracker</a></li>
+        <li><a href="tech-fitness.html">Tech Meets Fitness</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section>
+        <h2>Blog Posts</h2>
+        <picture>
+            <source srcset="images/physique-large.webp" media="(min-width: 768px)">
+            <img src="images/physique.webp" alt="Physique Image" width="960" height="1034" loading="lazy">
+        </picture>
+    </section>
+    <h2>FULL BLOG COMING SOON.....</h2>
+    <article>
+      <h3>Mastering the Handstand</h3>
+      <p>Published on 2024-11-01</p>
+      <p>I've learned the key steps to hold a handstand with better form and balance...</p>
+      <a href="#">Read More</a>
+    </article>
+    <article>
+        <h3>Finger Planche Transitions</h3>
+        <p>Published on 2024-10-25</p>
+        <p>Been very consistent with finger planche transitions from handstand, pushups...</p>
+        <a href="#">Read More</a>
+    </article>
+    <article>
+        <h3>Incorporating basics into my workouts again</h3>
+        <p>Published on 2024-10-18</p>
+        <p>I used to do a lot of basics in my first year doing calisthenics. But ever since i got into statics...</p>
+        <a href="#">Read More</a>
+    </article>
+  </main>
+
+  <footer>
+    <p> &copy; <span id="currentyear"></span> Static Beast. All rights reserved.</p>
+  </footer>
+  <script src="scripts/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Static Beast - Home</title>
+  <meta name="description" content="Building my final project which is a website about my calisthenics journey">
+  <meta name="Author" content="Kingsley Ezepue">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/main-large.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Static Beast</h1>
+    <p>Journey of a Static Athlete</p>
+    <button id="menu-toggle" aria-label="Toggle menu"></button>
+    <nav id="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="tracker.html">Progress Tracker</a></li>
+        <li><a href="tech-fitness.html">Tech Meets Fitness</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+<main>
+    <section id="intro">
+        <h2>Welcome to My Journey</h2>
+        <p class="firstpara">A place to document my calisthenics progress and share insights with fellow athletes.</p>
+        <!-- Add a placeholder for an intro image -->
+        <picture>
+            <source srcset="images/planche-large.webp" media="(min-width: 768px)">
+            <img src="images/planche.webp" alt="Planche image" width="1080" height="1350" loading="lazy">
+        </picture>
+    </section>
+
+    <section id="highlights">
+        <h2>Recent Highlights</h2>
+        <article>
+            <h3>Mastering the Finger Planche</h3>
+            <p>After months of doing finger planche transitions, I can finally hold a full finger planche for a solid 10 seconds!</p>
+            <a href="blog.html">Read More</a>
+        </article>
+        <article>
+            <h3>Getting my Maltese back</h3>
+            <p>My maltese planche comes and goes. This time, I'm unlocking it for good!</p>
+            <a href="blog.html">Read More</a>
+        </article>
+        <article>
+            <h3>Working on high volume planche combinations</h3>
+            <p>Doing power moves is cool but having the endurance to pull off combinations is next level. So, this is what my high volume static combos look like!</p>
+            <a href="blog.html">Read More</a>
+        </article>
+    </section>
+</main>
+
+<footer>
+    <p> &copy; <span id="currentyear"></span> Static Beast. All rights reserved.</p>
+</footer>
+
+  <script src="scripts/main.js" defer></script>
+</body>
+</html>

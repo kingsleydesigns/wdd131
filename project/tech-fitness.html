@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Static Beast - Tech Meets Fitness</title>
+  <meta name="description" content="This is the tech meets fitness page where i talk about the relationship between tech and fitness in my experience">
+  <meta name="Author" content="Kingsley Ezepue">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/main-large.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Static Beast</h1>
+    <p>Journey of a Static Athlete</p>
+    <button id="menu-toggle" aria-label="Toggle menu"></button>
+    <nav id="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="tracker.html">Progress Tracker</a></li>
+        <li><a href="tech-fitness.html">Tech Meets Fitness</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section>
+        <h2>Tech Meets Fitness</h2>
+        <picture>
+            <source srcset="images/backphysique-large.webp" media="(min-width: 768px)">
+            <img src="images/backphysique.webp" alt="Back Physique Image" width="1080" height="1012" loading="lazy">
+        </picture>
+    </section>
+    <article>
+        <h3>Fitness Apps and Trackers</h3>
+        <p>Fitness tracking apps have become essential tools, allowing athletes to monitor progress, set goals, and analyze data. My favorite app, Notion, helps me stay on top of daily training habits and track each skill's progress in real-time.</p>
+    </article>
+    <article>
+        <h3>Wearable Tech and Training</h3>
+        <p>Wearable tech has transformed training routines, providing real-time feedback on heart rate, calories, and body recovery. A quick glance at my smartwatch helps me stay within my target zones, which keeps my workouts optimized and balanced.</p>
+    </article>
+    <article>
+        <h3>AI in Fitness</h3>
+        <p>AI-based fitness coaching has made it possible to receive feedback on form and track improvements through video. This is especially helpful in calisthenics, where form and precision are everything.</p>
+    </article>
+    <article>
+        <h3>Fitness Communities Online</h3>
+        <p>Connecting with a global community of athletes has been invaluable. Platforms like Instagram allow me to follow other calisthenics enthusiasts, exchange tips, and keep up with new training techniques.</p>
+    </article>
+  </main>
+
+  <footer>
+    <p> &copy; <span id="currentyear"></span> Static Beast. All rights reserved.</p>
+  </footer>
+
+  <script src="scripts/main.js" defer></script>
+</body>
+</html>

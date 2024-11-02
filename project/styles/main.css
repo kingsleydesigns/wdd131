@@ -1,0 +1,239 @@
+/* Reset some default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f9;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  /* Header styling */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    font-family: "Croissant One", serif;
+  }
+  
+  header p {
+    font-size: 1rem;
+  }
+
+  .firstpara {
+    text-align: center;
+  }
+
+  h2{
+    text-align: center;
+    padding-top: 0.5rem;
+    font-family: "Croissant One", serif;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+
+  img{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  #menu-toggle {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #fff;
+	position: absolute;
+	top: 3.8rem;
+	right: 1rem;
+}
+
+#menu-toggle::before {
+	content: "☰";
+}
+
+#menu-toggle.open::before {
+	content: "❌";
+}
+
+  #main-nav ul {
+    display: none; /* Hide menu by default */
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 1rem 0;
+  }
+
+  #main-nav ul.open {
+    display: flex; /* Show menu when toggled */
+  }
+
+  body.menu-open main{
+    margin-top: 10rem;
+  }
+
+
+  /* Section styling */
+  section {
+    padding: 1.5rem;
+    margin: 1rem auto;
+  }
+  
+  section h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.8rem;
+  }
+  
+  section p {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  
+  /* Article styling (for blog posts and highlights) */
+  article {
+    margin: 1rem auto;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease;
+  }
+  article:hover{
+    transform: scale(1.05);
+  }
+  article h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  article p {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 1rem;
+  }
+  
+  article a {
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  article a:hover {
+    text-decoration: underline;
+  }
+  
+  #progress-tracker {
+    padding-top: 0;
+  }
+
+  #tracker-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the form elements horizontally */
+    margin: 1.5rem auto;
+    padding-bottom: 1rem;
+    width: 100%;
+    max-width: 400px;
+}
+
+  #tracker-form label {
+    display: block;
+    width: 100%;
+    padding-top: 1rem;
+    font-size: .9rem;
+    text-align: left;
+}
+
+#tracker-form input[type="text"],
+#tracker-form input[type="textarea"],
+#tracker-form input[type="date"],
+textarea{
+    background-color: #eee;
+    display: block;
+    border: 1px solid grey;
+    border-radius: 6px;
+    margin-top: 3px ;
+    padding: .75rem;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+
+#tracker-form input[type="submit"]{
+    border: none;
+    background-image: linear-gradient(#928f8f, rgb(20, 19, 19));
+    color: white;
+    border-radius: 6px;
+    box-sizing: border-box;
+    padding: .8rem;
+    margin-top: 1rem;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 1px 1px 4px #999;
+    transition: background-color 0.3s ease;
+}
+#tracker-form input[type="submit"]:hover{
+    background: black;
+}
+
+
+  /* Table styling for the Progress Tracker */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+  }
+  
+  thead th {
+    background-color: #333;
+    color: #fff;
+    padding: 0.75rem;
+  }
+  
+  tbody td {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+  }
+  
+  /* Footer styling */
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+    margin-top: 2rem;
+  }
+  
