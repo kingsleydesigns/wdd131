@@ -6,6 +6,12 @@ hamButton.addEventListener('click', () => {
 	hamButton.classList.toggle('open');
 });
 
+// Automatically close hamburger menu on tab click
+function closeHamburgerMenu() {
+  navigation.classList.remove('open');
+  hamButton.classList.remove('open');
+}
+
 const currentYear = new Date().getFullYear();
 
 document.getElementById("currentyear").textContent = currentYear;
@@ -149,6 +155,7 @@ function filterTemples(condition) {
 
 // Event listeners calling the filterTemples function with different conditions
 document.querySelector("#old").addEventListener("click", () => {
+    closeHamburgerMenu();
     filterTemples(temple => {
         const year = new Date(temple.dedicated).getFullYear();
         return year < 1900;
@@ -156,6 +163,7 @@ document.querySelector("#old").addEventListener("click", () => {
 });
 
 document.querySelector("#new").addEventListener("click", () => {
+    closeHamburgerMenu();
     filterTemples(temple => {
         const year = new Date(temple.dedicated).getFullYear();
         return year > 2000;
@@ -163,13 +171,16 @@ document.querySelector("#new").addEventListener("click", () => {
 });
 
 document.querySelector("#large").addEventListener("click", () => {
+    closeHamburgerMenu();
     filterTemples(temple => temple.area > 90000);
 });
 
 document.querySelector("#small").addEventListener("click", () => {
-    filterTemples(temple => temple.area < 10000);
+  closeHamburgerMenu();  
+  filterTemples(temple => temple.area < 10000);
 });
 
 document.querySelector("#home").addEventListener("click", () => {
+    closeHamburgerMenu();
     createTempleCard(temples);
 });
