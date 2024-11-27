@@ -155,32 +155,32 @@ function filterTemples(condition) {
 
 // Event listeners calling the filterTemples function with different conditions
 document.querySelector("#old").addEventListener("click", () => {
-    closeHamburgerMenu();
     filterTemples(temple => {
         const year = new Date(temple.dedicated).getFullYear();
         return year < 1900;
     });
+    closeHamburgerMenu();
 });
 
 document.querySelector("#new").addEventListener("click", () => {
-    closeHamburgerMenu();
     filterTemples(temple => {
         const year = new Date(temple.dedicated).getFullYear();
         return year > 2000;
     });
+    closeHamburgerMenu();
 });
 
 document.querySelector("#large").addEventListener("click", () => {
-    closeHamburgerMenu();
     filterTemples(temple => temple.area > 90000);
+    closeHamburgerMenu();
 });
 
-document.querySelector("#small").addEventListener("click", () => {
-  closeHamburgerMenu();  
+document.querySelector("#small").addEventListener("click", () => { 
   filterTemples(temple => temple.area < 10000);
+  closeHamburgerMenu();
 });
 
 document.querySelector("#home").addEventListener("click", () => {
-    closeHamburgerMenu();
     createTempleCard(temples);
+    closeHamburgerMenu();
 });
